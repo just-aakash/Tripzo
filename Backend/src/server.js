@@ -1,6 +1,10 @@
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
+const path = require("path");
+
+dotenv.config({ path: path.resolve(__dirname, "../.env") });
+dotenv.config();
 
 const connectDB = require("./config/db");
 const authRoutes = require("./routes/authRoutes");
@@ -9,10 +13,7 @@ const weatherRoutes = require("./routes/weatherRoutes");
 const placesRoutes = require("./routes/placesRoutes");
 const planRoutes = require("./routes/planRoutes");
 const costRoutes = require("./routes/costRoutes");
-const restaurantCostRoutes =
-  require("./routes/restaurantCostRoutes");
-
-dotenv.config();
+const restaurantCostRoutes = require("./routes/restaurantCostRoutes");
 
 const app = express();
 

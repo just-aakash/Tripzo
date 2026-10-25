@@ -1,9 +1,11 @@
 const dotenv = require("dotenv");
+const path = require("path");
 const mongoose = require("mongoose");
 
-const Destination = require("./src/models/Destination");
-
+dotenv.config({ path: path.resolve(__dirname, ".env") });
 dotenv.config();
+
+const Destination = require("./src/models/Destination");
 
 const destinations = [
   {
