@@ -1,0 +1,12 @@
+{
+  "name": "tripzo",
+  "version": "1.0.0",
+  "description": "Tripzo - Smart AI Travel Planner",
+  "scripts": {
+    "start": "npm run start --prefix Backend",
+    "backend": "npm run dev --prefix Backend",
+    "frontend": "npm run dev --prefix Frontend",
+    "seed": "node Backend/seedDestinations.js",
+    "build": "npm run build --prefix Frontend"
+  }
+}
