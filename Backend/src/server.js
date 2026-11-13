@@ -14,6 +14,7 @@ const placesRoutes = require("./routes/placesRoutes");
 const planRoutes = require("./routes/planRoutes");
 const costRoutes = require("./routes/costRoutes");
 const restaurantCostRoutes = require("./routes/restaurantCostRoutes");
+const crowdRoutes = require("./routes/crowdRoutes");
 
 const app = express();
 
@@ -45,6 +46,7 @@ app.use(
 app.use("/api/weather", weatherRoutes);
 app.use("/api/places", placesRoutes);
 app.use("/api/plan", planRoutes);
+app.use("/api/crowd", crowdRoutes);
 app.use(
   "/api/costs",
   costRoutes
