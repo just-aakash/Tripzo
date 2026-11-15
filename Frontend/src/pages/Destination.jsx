@@ -7,7 +7,7 @@ export default function Destination() {
   const { theme } = useTheme();
 
   /*
-    TravelMate supports two completely different
+    Tripzo supports two completely different
     destination page designs.
 
     The actual destination is obtained by the

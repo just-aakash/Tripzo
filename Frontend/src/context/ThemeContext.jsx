@@ -21,7 +21,7 @@ const THEMES = {
 
 export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState(() => {
-    const savedTheme = localStorage.getItem("travelmate_theme");
+    const savedTheme = localStorage.getItem("Tripzo_theme");
 
     // Only accept valid saved themes.
     if (savedTheme === "genz" || savedTheme === "millennial") {
@@ -39,7 +39,7 @@ export function ThemeProvider({ children }) {
     );
 
     localStorage.setItem(
-      "travelmate_theme",
+      "Tripzo_theme",
       theme
     );
   }, [theme]);

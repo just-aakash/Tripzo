@@ -66,7 +66,7 @@ export default function PlannerDestinationSearch({
     Search destinations.
 
     First:
-      Search our TravelMate database.
+      Search our Tripzo database.
 
     If nothing is found:
       Automatically discover the destination
@@ -109,7 +109,7 @@ export default function PlannerDestinationSearch({
 
         /*
           --------------------------------
-          STEP 1: Search TravelMate database
+          STEP 1: Search Tripzo database
           --------------------------------
         */
 
@@ -144,7 +144,7 @@ export default function PlannerDestinationSearch({
           localData.destinations || [];
 
         /*
-          If TravelMate already knows the
+          If Tripzo already knows the
           destination, use those results.
         */
         if (localResults.length > 0) {

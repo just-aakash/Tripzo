@@ -95,7 +95,7 @@ function GenZDropdown({
         </div>
 
         <p className="mt-1 text-xs leading-relaxed text-white/40">
-          Choose how you want TravelMate to feel.
+          Choose how you want Tripzo to feel.
         </p>
       </div>
 
@@ -195,7 +195,7 @@ function MillenialDropdown({
 
         <p className="mt-1 text-xs leading-relaxed text-[#26332c]/45">
           Select the atmosphere you'd like for your
-          TravelMate experience.
+          Tripzo experience.
         </p>
       </div>
 
@@ -225,7 +225,7 @@ function MillenialDropdown({
 
       <div className="mt-5 border-t border-[#26332c]/10 pt-4">
         <p className="text-[9px] uppercase tracking-[0.25em] text-[#26332c]/30">
-          TravelMate
+          Tripzo
         </p>
       </div>
     </>

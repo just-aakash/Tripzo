@@ -4,11 +4,11 @@ const AuthContext = createContext();
 
 export function AuthProvider({ children }) {
   const [token, setToken] = useState(
-    localStorage.getItem("travelmate_token")
+    localStorage.getItem("Tripzo_token")
   );
 
   const [user, setUser] = useState(() => {
-    const savedUser = localStorage.getItem("travelmate_user");
+    const savedUser = localStorage.getItem("Tripzo_user");
 
     if (!savedUser) {
       return null;
@@ -22,9 +22,9 @@ export function AuthProvider({ children }) {
   });
 
   const login = (newToken, newUser) => {
-    localStorage.setItem("travelmate_token", newToken);
+    localStorage.setItem("Tripzo_token", newToken);
     localStorage.setItem(
-      "travelmate_user",
+      "Tripzo_user",
       JSON.stringify(newUser)
     );
 
@@ -33,8 +33,8 @@ export function AuthProvider({ children }) {
   };
 
   const logout = () => {
-    localStorage.removeItem("travelmate_token");
-    localStorage.removeItem("travelmate_user");
+    localStorage.removeItem("Tripzo_token");
+    localStorage.removeItem("Tripzo_user");
 
     setToken(null);
     setUser(null);

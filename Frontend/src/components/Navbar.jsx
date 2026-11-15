@@ -60,7 +60,7 @@ export default function Navbar() {
           </motion.div>
 
           <span className="text-sm font-medium uppercase tracking-[0.2em]">
-            TravelMate
+            Tripzo
           </span>
 
         </Link>
