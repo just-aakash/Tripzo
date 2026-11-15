@@ -1,4 +1,7 @@
 const Destination = require("../models/Destination");
+const {
+  generateRuleBasedItinerary,
+} = require("../services/itineraryService");
 
 const generatePlan = async (req, res) => {
   try {
@@ -41,31 +44,17 @@ const generatePlan = async (req, res) => {
       ? interests
       : [];
 
-    // Basic planning response for now
-    const plan = {
-      destination: {
-        id: destination._id,
-        name: destination.name,
-        city: destination.city,
-        state: destination.state,
-        country: destination.country,
-        description: destination.description,
-        image: destination.image,
-        latitude: destination.latitude,
-        longitude: destination.longitude,
-      },
+    // Generate rule-based itinerary (Phase 8)
+    const plan = generateRuleBasedItinerary(destination, {
+      days,
+      budget,
+      travellers,
+      travelStyle,
+      interests: selectedInterests,
+    });
 
-      preferences: {
-        days: Number(days),
-        budget,
-        travellers: Number(travellers),
-        travelStyle,
-        interests: selectedInterests,
-      },
-
-      message:
-        "Planning data received successfully. AI itinerary generation will be connected next.",
-    };
+    plan.message =
+      "Your rule-based itinerary has been successfully generated based on travel preferences and timing constraints.";
 
     return res.status(200).json({
       success: true,
