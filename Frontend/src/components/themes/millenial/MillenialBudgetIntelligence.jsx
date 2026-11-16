@@ -107,7 +107,7 @@ export default function MillenialBudgetIntelligence({
               <span className="h-px w-10 bg-[#a28d55]" />
 
               <span className="text-[10px] font-semibold uppercase tracking-[0.25em] text-[#81745d]">
-                TravelMate / Budget Notes
+                Tripzo / Budget Notes
               </span>
             </div>
 
@@ -355,7 +355,7 @@ export default function MillenialBudgetIntelligence({
 
           <div>
             <p className="font-serif text-lg text-[#344139]">
-              A note from TravelMate
+              A note from Tripzo
             </p>
 
             <p className="mt-2 max-w-2xl text-xs leading-6 text-[#727a72]">

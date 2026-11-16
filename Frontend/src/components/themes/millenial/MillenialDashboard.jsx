@@ -110,7 +110,7 @@ export default function MillenialDashboard() {
             />
 
             <JournalCard
-              title="TravelMate AI"
+              title="Tripzo AI"
               text="Let intelligent recommendations shape your trip."
               icon={<Sparkles size={20} />}
               to="/ai-assistant"

@@ -80,7 +80,7 @@ export default function MillenialPlanning() {
             </h2>
 
             <p className="mt-8 max-w-md font-serif text-lg leading-relaxed text-[#26332c]/55">
-              TravelMate brings together the details
+              Tripzo brings together the details
               that usually take hours to research.
               Weather, crowds, costs, places to visit
               and everything around them.
@@ -157,7 +157,7 @@ export default function MillenialPlanning() {
           </p>
 
           <p className="mt-4 text-[9px] uppercase tracking-[0.35em] text-[#26332c]/35">
-            TravelMate
+            Tripzo
           </p>
         </div>
       </div>

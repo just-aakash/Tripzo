@@ -271,7 +271,7 @@ export default function MillenialDestination() {
             </Link>
 
             <span className="hidden md:block text-xs uppercase tracking-[0.25em] text-[#26332c]/35">
-              TravelMate / Destination
+              Tripzo / Destination
             </span>
           </div>
 
@@ -297,7 +297,7 @@ export default function MillenialDestination() {
             <div className="absolute left-6 md:left-12 bottom-7 md:bottom-12 text-white max-w-4xl">
               <p className="text-xs uppercase tracking-[0.3em] mb-4 text-white/75">
                 {destination.country ||
-                  "TravelMate destination"}
+                  "Tripzo destination"}
               </p>
 
               <h1 className="font-serif text-6xl md:text-8xl lg:text-[8rem] leading-[0.8] tracking-[-0.04em]">
@@ -364,7 +364,7 @@ export default function MillenialDestination() {
             </p>
 
             <p className="mt-7 text-[#26332c]/50 leading-7">
-              TravelMate brings together the practical
+              Tripzo brings together the practical
               details you need before visiting, so your
               time can be spent enjoying the destination
               rather than figuring it out.
@@ -409,7 +409,7 @@ export default function MillenialDestination() {
 
             <EditorialDetail
               icon={<Camera />}
-              label="TravelMate"
+              label="Tripzo"
               value="Curated"
             />
           </div>
@@ -667,7 +667,7 @@ export default function MillenialDestination() {
       </section>
 
       {/* ===================================================
-          TRAVELMATE INTELLIGENCE
+          Tripzo INTELLIGENCE
       =================================================== */}
 
       <section className="px-5 md:px-10 lg:px-16 py-24 bg-[#e9e5d9]">
@@ -678,7 +678,7 @@ export default function MillenialDestination() {
                 <Sparkles className="w-5 h-5 text-[#8b7651]" />
 
                 <p className="text-xs uppercase tracking-[0.3em] text-[#8b7651]">
-                  TravelMate intelligence
+                  Tripzo intelligence
                 </p>
               </div>
 
@@ -764,7 +764,7 @@ export default function MillenialDestination() {
           </h2>
 
           <p className="max-w-xl mx-auto mt-7 text-[#26332c]/55 leading-7">
-            Discover more places and let TravelMate help
+            Discover more places and let Tripzo help
             you understand what makes each one worth the
             journey.
           </p>
@@ -882,7 +882,7 @@ function MillenialWeatherInsight({ weather }) {
 
         <div>
           <p className="text-xs uppercase tracking-[0.25em] text-[#8b7651] mb-3">
-            TravelMate note
+            Tripzo note
           </p>
 
           <p className="font-serif text-2xl md:text-3xl leading-9">
@@ -975,7 +975,7 @@ function MillenialSmartVisiting({
           </h2>
 
           <p className="text-[#26332c]/55 leading-7 mt-6 max-w-md">
-            TravelMate considers crowd patterns and
+            Tripzo considers crowd patterns and
             weather conditions to suggest a more
             comfortable starting window.
           </p>

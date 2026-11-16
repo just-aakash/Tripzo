@@ -289,7 +289,7 @@ export default function MillenialExplore() {
         <div className="mx-auto max-w-7xl">
 
           <p className="text-[11px] uppercase tracking-[0.3em] text-[#26332c]/40">
-            TravelMate Journal
+            Tripzo Journal
           </p>
 
           <h2 className="mt-6 max-w-4xl font-serif text-5xl leading-[0.95] md:text-7xl">

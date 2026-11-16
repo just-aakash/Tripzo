@@ -11,7 +11,7 @@ export default function MillenialFooter() {
           {/* Brand */}
           <div>
             <p className="font-serif text-3xl">
-              TravelMate
+              Tripzo
             </p>
 
             <p className="mt-2 text-[9px] uppercase tracking-[0.3em] text-[#26332c]/40">
@@ -73,7 +73,7 @@ export default function MillenialFooter() {
 
         <div className="mt-16 flex flex-col justify-between gap-4 border-t border-[#26332c]/10 pt-6 text-[9px] uppercase tracking-[0.25em] text-[#26332c]/35 md:flex-row">
           <p>
-            © 2026 TravelMate
+            © 2026 Tripzo
           </p>
 
           <p>

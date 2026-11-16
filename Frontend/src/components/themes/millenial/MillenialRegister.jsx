@@ -143,7 +143,7 @@ export default function MillenialRegister() {
           <div className="absolute bottom-12 left-12 right-12 text-white">
 
             <p className="text-[10px] uppercase tracking-[0.3em] text-white/70">
-              TravelMate · Travel Journal
+              Tripzo · Travel Journal
             </p>
 
             <h1 className="mt-5 max-w-xl font-serif text-6xl leading-[0.9]">
@@ -177,7 +177,7 @@ export default function MillenialRegister() {
                 onClick={() => navigate("/")}
                 className="font-serif text-2xl"
               >
-                TravelMate
+                Tripzo
               </button>
 
               <p className="mt-2 text-[10px] uppercase tracking-[0.25em] text-[#26332c]/40">
@@ -198,7 +198,7 @@ export default function MillenialRegister() {
 
               <p className="mt-5 text-sm leading-6 text-[#26332c]/50">
                 A little information helps us make your
-                TravelMate experience more personal.
+                Tripzo experience more personal.
               </p>
 
             </div>

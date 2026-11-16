@@ -58,7 +58,7 @@ export default function MillenialOpening() {
             transition={{ duration: 0.7 }}
           >
             <p className="text-[10px] uppercase tracking-[0.35em] text-[#6d806f]">
-              The TravelMate Journal
+              The Tripzo Journal
             </p>
 
             <h1 className="mt-6 max-w-5xl font-serif text-6xl leading-[0.9] tracking-[-0.04em] text-[#26332c] sm:text-7xl md:text-8xl">
@@ -127,7 +127,7 @@ export default function MillenialOpening() {
 
             <div className="absolute bottom-6 right-6 hidden text-right text-white md:block md:bottom-8 md:right-8">
               <p className="text-[10px] uppercase tracking-[0.3em] text-white/60">
-                TravelMate
+                Tripzo
               </p>
 
               <p className="mt-1 text-xs text-white/70">

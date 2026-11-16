@@ -268,7 +268,7 @@ export default function MillenialPlan() {
                 <span className="h-px w-12 bg-[#9b8754]" />
 
                 <span className="text-[10px] font-semibold uppercase tracking-[0.25em] text-[#81745d]">
-                  TravelMate / Trip Planning
+                  Tripzo / Trip Planning
                 </span>
 
               </div>
@@ -304,7 +304,7 @@ export default function MillenialPlan() {
               <p className="max-w-md text-sm leading-7 text-[#697169] sm:text-base">
                 Tell us where you are going, how
                 you like to travel and what matters
-                most to you. TravelMate will use
+                most to you. Tripzo will use
                 those details to shape a thoughtful
                 itinerary.
               </p>
@@ -635,7 +635,7 @@ export default function MillenialPlan() {
 
                 <p className="mt-4 text-xs leading-6 text-[#71776f]">
                   Your pace influences how many
-                  experiences TravelMate places
+                  experiences Tripzo places
                   into each day.
                 </p>
 
@@ -734,7 +734,7 @@ export default function MillenialPlan() {
 
                 <p className="mt-4 text-center text-[10px] leading-5 text-[#8a8d87]">
                   Your preferences will guide
-                  the TravelMate itinerary engine.
+                  the Tripzo itinerary engine.
                 </p>
 
               </div>
@@ -918,7 +918,7 @@ export default function MillenialPlan() {
                       <p className="mt-3 text-xs leading-6 text-[#7b8179]">
                         Your personalized
                         activities will appear here
-                        once the TravelMate AI
+                        once the Tripzo AI
                         itinerary engine is connected.
                       </p>
 

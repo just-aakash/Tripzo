@@ -89,7 +89,7 @@ export default function MillenialLogin() {
 
           <div className="absolute bottom-12 left-12 right-12 text-white">
             <p className="text-[10px] uppercase tracking-[0.3em] text-white/70">
-              TravelMate · Travel Journal
+              Tripzo · Travel Journal
             </p>
 
             <h1 className="mt-5 max-w-xl font-serif text-6xl leading-[0.9]">
@@ -119,7 +119,7 @@ export default function MillenialLogin() {
                 onClick={() => navigate("/")}
                 className="font-serif text-2xl"
               >
-                TravelMate
+                Tripzo
               </button>
 
               <p className="mt-2 text-[10px] uppercase tracking-[0.25em] text-[#26332c]/40">
@@ -207,7 +207,7 @@ export default function MillenialLogin() {
 
             <div className="mt-12 border-t border-[#26332c]/15 pt-7">
               <p className="text-sm text-[#26332c]/50">
-                New to TravelMate?
+                New to Tripzo?
               </p>
 
               <button
