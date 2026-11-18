@@ -41,7 +41,7 @@ export default function GenZDashboard() {
           >
 
             <p className="mb-5 text-xs uppercase tracking-[0.35em] text-fuchsia-300">
-              Your TravelMate
+              Your Tripzo
             </p>
 
             <h1 className="max-w-5xl text-5xl font-black leading-[0.95] md:text-8xl">
@@ -114,7 +114,7 @@ export default function GenZDashboard() {
             />
 
             <DashboardCard
-              title="TravelMate AI"
+              title="Tripzo AI"
               description="Ask AI where you should go."
               icon={<Sparkles size={22} />}
               to="/ai-assistant"

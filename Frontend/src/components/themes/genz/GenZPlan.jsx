@@ -302,7 +302,7 @@ export default function GenZPlan() {
 
               <Sparkles size={14} />
 
-              TravelMate Planner
+              Tripzo Planner
 
             </div>
 
@@ -319,7 +319,7 @@ export default function GenZPlan() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-7 text-white/50 sm:text-lg">
-              Tell TravelMate what kind of trip
+              Tell Tripzo what kind of trip
               you want. We'll use your
               destination, budget, interests and
               travel style to build your itinerary.
@@ -659,7 +659,7 @@ export default function GenZPlan() {
                 </h2>
 
                 <p className="mt-2 text-sm leading-6 text-white/40">
-                  This helps TravelMate decide
+                  This helps Tripzo decide
                   how packed or relaxed your
                   itinerary should be.
                 </p>
@@ -761,7 +761,7 @@ export default function GenZPlan() {
               </button>
 
               <p className="mt-4 text-center text-[10px] leading-5 text-white/25">
-                TravelMate will use these
+                Tripzo will use these
                 preferences to create your
                 personalized plan.
               </p>

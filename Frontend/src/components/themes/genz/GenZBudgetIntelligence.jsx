@@ -100,7 +100,7 @@ export default function GenZBudgetIntelligence({ destination }) {
           <div>
             <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-fuchsia-400/20 bg-fuchsia-400/10 px-3 py-1.5 text-xs font-medium text-fuchsia-300">
               <Sparkles size={13} />
-              TRAVELMATE INTELLIGENCE
+              Tripzo INTELLIGENCE
             </div>
 
             <h2 className="text-3xl font-black tracking-tight sm:text-4xl">
@@ -339,7 +339,7 @@ export default function GenZBudgetIntelligence({ destination }) {
 
             <div>
               <p className="text-sm font-semibold">
-                TravelMate tip
+                Tripzo tip
               </p>
 
               <p className="mt-1 text-xs leading-5 text-white/45">

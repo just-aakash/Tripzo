@@ -12,7 +12,7 @@ export default function GenZFooter() {
             </div>
 
             <span className="text-xl font-bold">
-              TravelMate
+              Tripzo
             </span>
           </div>
 

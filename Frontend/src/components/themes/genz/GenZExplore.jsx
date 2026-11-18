@@ -101,7 +101,7 @@ export default function GenZExplore() {
             className="flex items-center gap-2 text-xs uppercase tracking-[0.3em] text-white/45"
           >
             <Sparkles size={14} />
-            TravelMate Explore
+            Tripzo Explore
           </motion.div>
 
           {/* Heading */}
@@ -261,7 +261,7 @@ export default function GenZExplore() {
 
               <p className="mt-3 leading-7 text-white/40">
                 Search for a city or destination above and
-                TravelMate will start discovering interesting
+                Tripzo will start discovering interesting
                 places around it.
               </p>
             </div>

@@ -124,7 +124,7 @@ export default function GenZDestination() {
 
         // ---------------------------------------------------
         // STEP 1
-        // Search TravelMate destinations
+        // Search Tripzo destinations
         // ---------------------------------------------------
 
         const searchResponse = await fetch(
@@ -649,7 +649,7 @@ export default function GenZDestination() {
 
             <GenZQuickCard
               icon={<Sparkles />}
-              label="TravelMate"
+              label="Tripzo"
               value="Smart"
               color="text-yellow-400"
             />
@@ -1049,7 +1049,7 @@ export default function GenZDestination() {
 
             <p>
               {destination.description ||
-                `Explore ${destination.name} with TravelMate.`}
+                `Explore ${destination.name} with Tripzo.`}
             </p>
 
 
@@ -1077,7 +1077,7 @@ export default function GenZDestination() {
 
 
       {/* =====================================================
-          TRAVELMATE INTELLIGENCE
+          Tripzo INTELLIGENCE
       ===================================================== */}
 
       <section className="px-6 md:px-12 py-24">
@@ -1100,7 +1100,7 @@ export default function GenZDestination() {
                 <Sparkles className="w-5 h-5 text-fuchsia-400" />
 
                 <p className="text-fuchsia-400 uppercase tracking-[0.25em] text-xs font-semibold">
-                  TravelMate Intelligence
+                  Tripzo Intelligence
                 </p>
 
               </div>
@@ -1226,7 +1226,7 @@ export default function GenZDestination() {
               </h2>
 
               <p className="max-w-xl mx-auto mt-5 text-white/50">
-                TravelMate helps you understand the
+                Tripzo helps you understand the
                 destination before you actually get there.
               </p>
 
@@ -1376,7 +1376,7 @@ function WeatherInsight({ weather }) {
           <div>
 
             <p className="text-cyan-400 text-xs uppercase tracking-[0.25em] font-semibold mb-2">
-              TravelMate insight
+              Tripzo insight
             </p>
 
             <p className="text-white/70 text-lg leading-7">
@@ -1506,7 +1506,7 @@ function SmartVisitingTime({
               </h2>
 
               <p className="text-white/45 mt-5 max-w-lg">
-                TravelMate combines destination crowd
+                Tripzo combines destination crowd
                 preferences with current conditions to
                 suggest a practical visiting window.
               </p>
@@ -1631,7 +1631,7 @@ function CrowdIntelligence({
             </h2>
 
             <p className="text-white/45 mt-5 leading-7 max-w-lg">
-              TravelMate estimates how busy different
+              Tripzo estimates how busy different
               parts of the day could feel so you can make
               smarter sightseeing decisions.
             </p>

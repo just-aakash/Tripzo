@@ -49,7 +49,7 @@ export default function GenZVibes() {
 
           <p className="max-w-sm text-sm leading-relaxed text-white/40">
             Travel should match the way you feel.
-            Choose an energy and let TravelMate
+            Choose an energy and let Tripzo
             help you discover somewhere worth going.
           </p>
         </div>

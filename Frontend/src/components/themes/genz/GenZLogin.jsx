@@ -104,7 +104,7 @@ const { setTheme } = useTheme();
         >
           <div className="flex items-center gap-2 text-xs uppercase tracking-[0.3em] text-white/45">
             <Sparkles size={14} />
-            TravelMate
+            Tripzo
           </div>
 
           <h1 className="mt-8 max-w-3xl text-7xl font-black leading-[0.86] tracking-[-0.06em]">
@@ -133,7 +133,7 @@ const { setTheme } = useTheme();
           {/* Mobile heading */}
           <div className="mb-8 lg:hidden">
             <p className="text-xs uppercase tracking-[0.25em] text-white/40">
-              TravelMate
+              Tripzo
             </p>
 
             <h1 className="mt-3 text-5xl font-black tracking-[-0.05em]">
