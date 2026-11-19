@@ -4,6 +4,7 @@ import { useState } from "react";
 
 import { useAuth } from "../../../context/AuthContext";
 import ThemeSelector from "../../ThemeSelector";
+import TripzoLogo from "../../TripzoLogo";
 
 export default function MillenialNavigation() {
   const { isAuthenticated, user, logout } = useAuth();
@@ -12,7 +13,7 @@ export default function MillenialNavigation() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="relative z-50 border-b border-[#26332c]/10 bg-[#f3f0e7]">
+    <header className="sticky top-0 z-50 border-b border-[#26332c]/10 bg-[#f3f0e7]">
       <div className="mx-auto max-w-7xl px-6">
 
         {/* Main navigation */}
@@ -23,19 +24,7 @@ export default function MillenialNavigation() {
             to="/"
             className="group flex items-center gap-3"
           >
-            <div className="flex h-9 w-9 items-center justify-center border border-[#26332c]/30 text-sm font-serif transition-transform duration-500 group-hover:rotate-45">
-              T
-            </div>
-
-            <div>
-              <p className="font-serif text-xl tracking-wide">
-                TravelMate
-              </p>
-
-              <p className="hidden text-[9px] uppercase tracking-[0.3em] text-[#26332c]/45 sm:block">
-                Travel Journal
-              </p>
-            </div>
+            <TripzoLogo iconSize={32} textColor="text-[#26332c]" />
           </Link>
 
           {/* Desktop navigation */}

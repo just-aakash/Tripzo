@@ -1,8 +1,9 @@
 import { Link, useNavigate } from "react-router-dom";
-import { Compass, LogOut, UserRound } from "lucide-react";
+import { LogOut, UserRound } from "lucide-react";
 
 import { useAuth } from "../../../context/AuthContext";
 import ThemeSelector from "../../ThemeSelector";
+import TripzoLogo from "../../TripzoLogo";
 
 export default function GenZNavigation() {
   const { isAuthenticated, user, logout } = useAuth();
@@ -15,15 +16,9 @@ export default function GenZNavigation() {
         {/* Logo */}
         <Link
           to="/"
-          className="flex items-center gap-2"
+          className="group flex items-center gap-2"
         >
-          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-pink-500 via-purple-500 to-cyan-400">
-            <Compass size={18} />
-          </div>
-
-          <span className="hidden text-sm font-semibold tracking-tight sm:block">
-            TravelMate
-          </span>
+          <TripzoLogo iconSize={30} textColor="text-white" />
         </Link>
 
         {/* Navigation */}
