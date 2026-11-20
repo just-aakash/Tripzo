@@ -23,6 +23,7 @@ import Register from "./pages/Register";
 
 import { AuthProvider } from "./context/AuthContext";
 import { ThemeProvider } from "./context/ThemeContext";
+import Preloader from "./components/Preloader";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -128,6 +129,7 @@ export default function App() {
   return (
     <ThemeProvider>
       <AuthProvider>
+        <Preloader />
         <BrowserRouter>
           <AnimatedRoutes />
         </BrowserRouter>

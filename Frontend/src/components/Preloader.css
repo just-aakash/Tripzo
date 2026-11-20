@@ -1,0 +1,201 @@
+/* =====================================================
+   TRIPZO BRAND PRELOADER
+   Harmonized with Tripzo UI (Cyber Dark #080811 + Cyan/Mint & Fuchsia/Purple)
+   ===================================================== */
+
+:root {
+  --tripzo-ground: #080811;
+  --tripzo-surface: #0f101f;
+  --tripzo-ink: #ffffff;
+  --tripzo-mint: #34f5a4;
+  --tripzo-cyan: #06b6d4;
+  --tripzo-fuchsia: #d946ef;
+  --tripzo-purple: #8b5cf6;
+  --tripzo-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --tripzo-ease-snap: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.tripzo-preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(700px 420px at 50% 48%, rgba(217, 70, 239, 0.12), rgba(6, 182, 212, 0.14) 45%, transparent 75%),
+    radial-gradient(900px 500px at 50% 10%, rgba(139, 92, 246, 0.1), transparent 80%),
+    var(--tripzo-ground);
+  transition: opacity 0.65s var(--tripzo-ease-out), transform 0.65s var(--tripzo-ease-out), visibility 0.65s;
+}
+
+.tripzo-preloader.is-done {
+  opacity: 0;
+  transform: translateY(-16px) scale(1.015);
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.tripzo-loader-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  padding: 24px;
+}
+
+.tripzo-brand-lockup {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  position: relative;
+}
+
+/* T-arrow mark matching Tripzo logo */
+.tripzo-brand-mark {
+  width: 68px;
+  height: 68px;
+  flex-shrink: 0;
+  filter: drop-shadow(0 10px 24px rgba(6, 182, 212, 0.35)) drop-shadow(0 0 16px rgba(217, 70, 239, 0.2));
+}
+
+.tripzo-mark-stem {
+  opacity: 0;
+  transform-origin: 28px 54px;
+  transform: translateY(14px) scaleY(0.6);
+  animation: tripzoStemIn 0.65s var(--tripzo-ease-out) 0.1s forwards;
+}
+
+.tripzo-mark-arrow {
+  opacity: 0;
+  transform: translate(-18px, 6px) scale(0.88);
+  animation: tripzoArrowShoot 0.72s var(--tripzo-ease-snap) 0.28s forwards;
+}
+
+/* Wordmark letters in Outfit italic 800 */
+.tripzo-brand-wordmark {
+  display: flex;
+  align-items: baseline;
+  font-family: "Outfit", sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: clamp(2.75rem, 6vw, 4rem);
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: var(--tripzo-ink);
+  overflow: hidden;
+  padding: 6px 8px 6px 2px;
+  user-select: none;
+}
+
+.tripzo-brand-wordmark span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(110%) skewX(-4deg);
+  animation: tripzoLetterRise 0.7s var(--tripzo-ease-out) forwards;
+  animation-delay: calc(0.42s + var(--i) * 0.055s);
+  text-shadow: 0 8px 28px rgba(0, 0, 0, 0.6), 0 0 25px rgba(6, 182, 212, 0.18);
+}
+
+/* Subtle light sheen sweep across lockup once revealed */
+.tripzo-brand-lockup::after {
+  content: "";
+  position: absolute;
+  inset: -10px -24px;
+  background: linear-gradient(
+    105deg,
+    transparent 36%,
+    rgba(255, 255, 255, 0.24) 50%,
+    transparent 64%
+  );
+  transform: translateX(-130%);
+  animation: tripzoSheenSweep 1.15s var(--tripzo-ease-out) 1.05s forwards;
+  pointer-events: none;
+}
+
+/* Progress bar track */
+.tripzo-loader-track {
+  width: min(240px, 62vw);
+  height: 3px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+  opacity: 0;
+  animation: tripzoFadeIn 0.4s ease 0.55s forwards;
+}
+
+.tripzo-loader-bar {
+  height: 100%;
+  width: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--tripzo-mint) 0%, var(--tripzo-cyan) 50%, var(--tripzo-fuchsia) 100%);
+  box-shadow: 0 0 12px rgba(6, 182, 212, 0.5);
+  transform-origin: left center;
+  transform: scaleX(0);
+  animation: tripzoBarFill 1.55s var(--tripzo-ease-out) 0.6s forwards;
+}
+
+@keyframes tripzoStemIn {
+  to {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+  }
+}
+
+@keyframes tripzoArrowShoot {
+  0% {
+    opacity: 0;
+    transform: translate(-18px, 6px) scale(0.88);
+  }
+  70% {
+    opacity: 1;
+    transform: translate(3px, -1px) scale(1.03);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes tripzoLetterRise {
+  to {
+    opacity: 1;
+    transform: translateY(0) skewX(0deg);
+  }
+}
+
+@keyframes tripzoSheenSweep {
+  to {
+    transform: translateX(130%);
+  }
+}
+
+@keyframes tripzoFadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes tripzoBarFill {
+  0% {
+    transform: scaleX(0);
+  }
+  45% {
+    transform: scaleX(0.62);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tripzo-mark-stem,
+  .tripzo-mark-arrow,
+  .tripzo-brand-wordmark span,
+  .tripzo-loader-track,
+  .tripzo-loader-bar {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
